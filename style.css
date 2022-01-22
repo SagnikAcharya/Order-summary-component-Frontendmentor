@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #dfe7ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    background-image:url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%  400px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    text-align: center;
+    height:650px;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);;
+}
+.card img{
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+.container{
+    padding: 35px 80px;
+}
+.container h2{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container p{
+    font-weight: 500;
+    color: grey;
+}
+
+.plan{
+    margin: 30px auto;
+    background-color: #cad1df38;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    border-radius: 10px;
+    /* margin: 0; */
+    
+}
+.plan-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.annual{
+    margin-left: 10px;
+}
+.annual h5{
+    text-align: left;
+    font-weight: lighter;
+    color: grey;
+}
+.plan-link a{
+    color: rgb(37, 37, 170);
+    /* font-weight: bold; */
+    font-weight: bold;
+}
+
+.plan-link a:active{
+    color: rgb(90, 90, 199);
+    text-decoration: none;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    /* margin: 25px; */
+    margin: 30px 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 330px;
+    height: 45px;
+    /* margin: 10px; */
+    /* background-color: rgb(37, 37, 170);; */
+    background:linear-gradient(rgb(41, 41, 228),hsl(240, 58%, 50%));
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 12px 15px 0.5px rgba(14, 7, 112, 0.2);    
+}
+
+.btn:active{
+    background:linear-gradient(rgb(123, 123, 196),rgb(123, 123, 194));
+    box-shadow: 0px 12px 15px 0.5px rgba(116, 110, 192, 0.37);    
+}
+
+.button a{
+    text-decoration: none;
+    margin: 25px;
+    color: grey;
+    font-weight: bold;
+}
+
+.button a:active{
+    color: black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(200, 200, 212);
+    margin-top: 80px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+@media (max-width:500px) {
+    body{
+    background-size: 100%  300px;
+    width: 100%;
+    margin: 0px auto;
+    overflow: auto;
+    height: 600px;
+    }
+    .card{
+        width: 340px;
+        height: 580px;
+    }
+    .container{
+        padding: 0;
+    }
+    .plan,.btn{
+        width: 270px;
+    }
+  }
